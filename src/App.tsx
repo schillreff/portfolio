@@ -1,8 +1,20 @@
+import { AnimatePresence } from "framer-motion";
+import { BrowserRouter } from "react-router-dom";
+import RoutesMain from "./routes";
+import Header from "./components/Header";
+
 function App() {
   return (
-    <div>
-      <h1 className="font-roboto font-bold text-red-700 ">Portfolio</h1>
-    </div>
+    <AnimatePresence>
+      <div className="bg-secondary-light transition duration-300 dark:bg-primary-dark">
+        <BrowserRouter>
+          <Header />
+          <div className="container mx-auto">
+            <RoutesMain />
+          </div>
+        </BrowserRouter>
+      </div>
+    </AnimatePresence>
   );
 }
 
