@@ -9,9 +9,7 @@ function App() {
       <div className="bg-secondary-light transition duration-300 dark:bg-primary-dark">
         <BrowserRouter>
           <Header />
-          <div className="">
-            <RoutesMain />
-          </div>
+          <RoutesMain />
         </BrowserRouter>
       </div>
     </AnimatePresence>
